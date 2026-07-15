@@ -504,50 +504,74 @@ export const DATA = {
   location: "Islamabad, Pakistan",
   locationLink: "https://www.google.com/maps/place/Islamabad",
   about:
-    "Information Technology Specialist and AI Enthusiast dedicated to leveraging modern web architectures and secure digital public goods to advance humanitarian, health, and sustainable development goals.",
+    "Full Stack Developer specializing in modern web architectures, scalable backend systems, and decentralized (Web3) applications.",
   summary:
-    "I am an Associate Web Developer with a strong background in developing health informatics systems and decentralized digital platforms. I specialize in the MERN stack, Next.js, Nest.js, and Web3 technologies. I am committed to the core values of integrity, accountability, care, and respect for diversity, with a proven ability to bridge complex technical solutions with real-world community impact.",
-  avatarUrl: "/me.png", // Make sure to add your photo to the 'public' folder and name it me.png
+    "I am a Full Stack Developer experienced in building robust, end-to-end digital solutions utilizing Next.js, Nest.js, and the MERN stack. My expertise spans architecting scalable microservices, deploying secure smart contracts, and optimizing development lifecycles via modern AI integration. I am highly focused on translating complex business logic into high-performance, maintainable software architectures and delivering seamless user experiences.",
+  avatarUrl: "/me.png",
   skills: [
     "Next.js",
-    "React",
+    "React.js",
     "Nest.js",
     "Node.js",
+    "Express.js",
     "MERN Stack",
     "TypeScript",
+    "JavaScript",
+    "Python",
+    "C#",
+    "C/C++",
+    "Java",
     "Tailwind CSS",
+    "HTML5 / CSS3",
+    "SQL Server",
+    "MongoDB",
+    "Microservices Architecture",
+    "RESTful APIs",
     "Solidity",
     "Hardhat",
     "IPFS",
-    "Smart Contracts",
-    "Web3.js",
+    "Ethers.js / Web3.js",
+    "Flutter",
     "AI-Assisted Development",
     "RAG & LLMs",
-    "MongoDB",
-    "SQL",
-    "C#",
-    "ASP.NET",
+    "Prompt Engineering",
+    "Git & Version Control",
+    "Vercel Deployment"
   ],
   contact: {
     email: "mubsharajaz@gmail.com",
     tel: "+92 321 4173242",
     social: {
       GitHub: {
-        url: "https://github.com/yourusername", // Replace with your GitHub
+        url: "https://github.com/yourusername", // Replace with your GitHub URL
         icon: "github",
       },
       LinkedIn: {
-        url: "https://linkedin.com/in/yourusername", // Replace with your LinkedIn
+        url: "https://linkedin.com/in/yourusername", // Replace with your LinkedIn URL
         icon: "linkedin",
       },
     },
   },
+  work: [
+    {
+      company: "ADECN MEP",
+      href: "#",
+      badges: [],
+      location: "On-site",
+      title: "IT Intern / Web Developer",
+      logoUrl: "/adecn-logo.png", // Add logo to public folder if available
+      start: "July 2025",
+      end: "August 2025",
+      description:
+        "Completed a technical internship focused on web development and IT infrastructure support. Engineered simple, responsive web pages, assisted in frontend troubleshooting, and gained practical experience in professional development workflows and project documentation.",
+    }
+  ],
   education: [
     {
       school: "National University of Modern Languages (NUML)",
       href: "https://numl.edu.pk",
-      degree: "Bachelor of Computer Sciences",
-      logoUrl: "/numl-logo.png", // Add a logo to your public folder
+      degree: "Bachelor of Computer Sciences (GPA: 3.7)",
+      logoUrl: "/numl-logo.png",
       start: "2022",
       end: "2026",
     },
@@ -562,29 +586,13 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Health Informatics: Blood Bank System",
-      href: "#", // Add live link if available
-      dates: "2023",
-      active: true,
-      description:
-        "Built a 3-tier ASP.NET application to address critical local healthcare management inefficiencies. Engineered robust database operations using C# and SQL to ensure the secure, accurate tracking of vital medical resources with role-based access controls.",
-      technologies: ["ASP.NET", "C#", "SQL", "3-Tier Architecture"],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/yourusername/blood-bank",
-          icon: "github",
-        },
-      ],
-    },
-    {
-      title: "Digital Inclusion: EVOFreelancer",
-      href: "#", // Add live link if available
+      title: "EVOFreelancer (Web3 & AI Platform)",
+      href: "#", 
       dates: "2023 - 2024",
       active: true,
       description:
-        "Developed a Web3 and AI-driven platform promoting digital economic inclusion and fair labor compensation. Implemented secure smart contracts (Solidity) and KYC verification modules. Integrated IPFS for immutable, decentralized file storage.",
-      technologies: ["Next.js", "Solidity", "Hardhat", "IPFS", "Web3.js", "AI Integration"],
+        "Engineered a decentralized freelancing marketplace to eliminate third-party intermediaries. Authored and deployed secure smart contracts in Solidity using Hardhat for compiling and testing. Integrated IPFS for distributed peer-to-peer storage and coupled it with a Next.js web application and a Flutter mobile interface utilizing automated KYC validation modules.",
+      technologies: ["Next.js", "Solidity", "Hardhat", "IPFS", "Ethers.js", "Flutter", "Tailwind CSS"],
       links: [
         {
           type: "Source",
@@ -594,13 +602,29 @@ export const DATA = {
       ],
     },
     {
-      title: "Health IT: CareSoft Reception",
-      href: "#", // Add live link if available
+      title: "Blood Bank Management System",
+      href: "#",
+      dates: "2023",
+      active: true,
+      description:
+        "Developed an enterprise-grade web application applying a 3-Tier Architecture (Presentation, Business Logic, Data Access layers). Constructed robust back-end database handlers utilizing C# and SQL Server, and implemented secure server-side session controls alongside role-based routing and redirection.",
+      technologies: ["ASP.NET Web Forms", "C#", "SQL Server", "3-Tier Architecture"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/yourusername/blood-bank",
+          icon: "github",
+        },
+      ],
+    },
+    {
+      title: "CareSoft Hospital Management Interface",
+      href: "#",
       dates: "2024",
       active: true,
       description:
-        "Designed a responsive hospital management interface leveraging React and JavaScript to streamline patient intake. Constructed dynamic web pages focusing on accessibility for healthcare workers to improve operational efficiency.",
-      technologies: ["React", "JavaScript", "HTML", "CSS", "UI/UX Accessibility"],
+        "Designed and built a responsive front-end single-page application (SPA) to automate hospital intake operations. Engineered using reusable, modular React components and optimized JavaScript event handling to ensure clean state management, accessible user interfaces, and low runtime latency.",
+      technologies: ["React.js", "JavaScript", "HTML5", "CSS3", "UI/UX Optimization"],
       links: [
         {
           type: "Source",
