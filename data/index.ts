@@ -503,87 +503,67 @@ export const DATA = {
   initials: "MA",
   location: "Islamabad, Pakistan",
   locationLink: "https://www.google.com/maps/place/Islamabad",
-  about:
-    "Full Stack Developer specializing in modern web architectures, scalable backend systems, and decentralized (Web3) applications.",
   summary:
-    "I am a Full Stack Developer experienced in building robust, end-to-end digital solutions utilizing Next.js, Nest.js, and the MERN stack. My expertise spans architecting scalable microservices, deploying secure smart contracts, and optimizing development lifecycles via modern AI integration. I am highly focused on translating complex business logic into high-performance, maintainable software architectures and delivering seamless user experiences.",
+    "I am a Full Stack Developer experienced in building robust, end-to-end digital solutions utilizing Next.js, Nest.js, and the MERN stack. My expertise spans architecting scalable microservices, deploying secure smart contracts, and optimizing development lifecycles via modern AI integration.",
   avatarUrl: "/me.png",
-  skills: [
-    "Next.js",
-    "React.js",
-    "Nest.js",
-    "Node.js",
-    "Express.js",
-    "MERN Stack",
-    "TypeScript",
-    "JavaScript",
-    "Python",
-    "C#",
-    "C/C++",
-    "Java",
-    "Tailwind CSS",
-    "HTML5 / CSS3",
-    "SQL Server",
-    "MongoDB",
-    "Microservices Architecture",
-    "RESTful APIs",
-    "Solidity",
-    "Hardhat",
-    "IPFS",
-    "Ethers.js / Web3.js",
-    "Flutter",
-    "AI-Assisted Development",
-    "RAG & LLMs",
-    "Prompt Engineering",
-    "Git & Version Control",
-    "Vercel Deployment"
-  ],
+  
+  // THE FIX: 'about' is now an object containing all the data the About page needs
+  about: {
+    profile: "Full Stack Developer specializing in modern web architectures, scalable backend systems, and decentralized (Web3) applications. I am highly focused on translating complex business logic into high-performance, maintainable software architectures and delivering seamless user experiences.",
+    experience: [
+      {
+        company: "ADECN MEP",
+        href: "#",
+        badges: [],
+        location: "On-site",
+        title: "IT Intern / Web Developer",
+        logoUrl: "/adecn-logo.png",
+        start: "July 2025",
+        end: "August 2025",
+        description: "Completed a technical internship focused on web development and IT infrastructure support. Engineered simple, responsive web pages, assisted in frontend troubleshooting, and gained practical experience in professional workflows."
+      }
+    ],
+    education: [
+      {
+        school: "National University of Modern Languages (NUML)",
+        href: "https://numl.edu.pk",
+        degree: "Bachelor of Computer Sciences (GPA: 3.7)",
+        logoUrl: "/numl-logo.png",
+        start: "2022",
+        end: "2026",
+      },
+      {
+        school: "Ideal Group of Colleges",
+        href: "#",
+        degree: "FSc Pre-Engineering",
+        logoUrl: "/ideal-logo.png",
+        start: "2020",
+        end: "2022",
+      }
+    ],
+    technologies: [
+      "Next.js", "React.js", "Nest.js", "Node.js", "Express.js", "MERN Stack",
+      "TypeScript", "JavaScript", "Python", "C#", "SQL Server", "MongoDB",
+      "Microservices Architecture", "Solidity", "Hardhat", "IPFS", "Flutter",
+      "AI-Assisted Development"
+    ]
+  },
+
   contact: {
     email: "mubsharajaz@gmail.com",
     tel: "+92 321 4173242",
     social: {
       GitHub: {
-        url: "https://github.com/yourusername", // Replace with your GitHub URL
+        url: "https://github.com/yourusername",
         icon: "github",
       },
       LinkedIn: {
-        url: "https://linkedin.com/in/yourusername", // Replace with your LinkedIn URL
+        url: "https://linkedin.com/in/yourusername",
         icon: "linkedin",
       },
     },
   },
-  work: [
-    {
-      company: "ADECN MEP",
-      href: "#",
-      badges: [],
-      location: "On-site",
-      title: "IT Intern / Web Developer",
-      logoUrl: "/adecn-logo.png", // Add logo to public folder if available
-      start: "July 2025",
-      end: "August 2025",
-      description:
-        "Completed a technical internship focused on web development and IT infrastructure support. Engineered simple, responsive web pages, assisted in frontend troubleshooting, and gained practical experience in professional development workflows and project documentation.",
-    }
-  ],
-  education: [
-    {
-      school: "National University of Modern Languages (NUML)",
-      href: "https://numl.edu.pk",
-      degree: "Bachelor of Computer Sciences (GPA: 3.7)",
-      logoUrl: "/numl-logo.png",
-      start: "2022",
-      end: "2026",
-    },
-    {
-      school: "Ideal Group of Colleges",
-      href: "#",
-      degree: "FSc Pre-Engineering",
-      logoUrl: "/ideal-logo.png",
-      start: "2020",
-      end: "2022",
-    }
-  ],
+  
   projects: [
     {
       title: "EVOFreelancer (Web3 & AI Platform)",
@@ -591,8 +571,8 @@ export const DATA = {
       dates: "2023 - 2024",
       active: true,
       description:
-        "Engineered a decentralized freelancing marketplace to eliminate third-party intermediaries. Authored and deployed secure smart contracts in Solidity using Hardhat for compiling and testing. Integrated IPFS for distributed peer-to-peer storage and coupled it with a Next.js web application and a Flutter mobile interface utilizing automated KYC validation modules.",
-      technologies: ["Next.js", "Solidity", "Hardhat", "IPFS", "Ethers.js", "Flutter", "Tailwind CSS"],
+        "Engineered a decentralized freelancing marketplace to eliminate third-party intermediaries. Authored and deployed secure smart contracts in Solidity using Hardhat for compiling and testing. Integrated IPFS for distributed peer-to-peer storage.",
+      technologies: ["Next.js", "Solidity", "Hardhat", "IPFS", "Ethers.js", "Flutter"],
       links: [
         {
           type: "Source",
@@ -607,7 +587,7 @@ export const DATA = {
       dates: "2023",
       active: true,
       description:
-        "Developed an enterprise-grade web application applying a 3-Tier Architecture (Presentation, Business Logic, Data Access layers). Constructed robust back-end database handlers utilizing C# and SQL Server, and implemented secure server-side session controls alongside role-based routing and redirection.",
+        "Developed an enterprise-grade web application applying a 3-Tier Architecture (Presentation, Business Logic, Data Access layers). Constructed robust back-end database handlers utilizing C# and SQL Server.",
       technologies: ["ASP.NET Web Forms", "C#", "SQL Server", "3-Tier Architecture"],
       links: [
         {
@@ -623,7 +603,7 @@ export const DATA = {
       dates: "2024",
       active: true,
       description:
-        "Designed and built a responsive front-end single-page application (SPA) to automate hospital intake operations. Engineered using reusable, modular React components and optimized JavaScript event handling to ensure clean state management, accessible user interfaces, and low runtime latency.",
+        "Designed and built a responsive front-end single-page application (SPA) to automate hospital intake operations. Engineered using reusable, modular React components and optimized JavaScript event handling.",
       technologies: ["React.js", "JavaScript", "HTML5", "CSS3", "UI/UX Optimization"],
       links: [
         {
